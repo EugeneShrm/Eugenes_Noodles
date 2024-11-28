@@ -28,13 +28,8 @@ from sqlalchemy import create_engine
 
 engine = create_engine('sqlite:///:memory:') # Create an in-memory SQLite database
 
-# Sample DataFrame to be written to SQL
-df = pd.DataFrame({
-    'column1': [1, 2, 3],
-    'column2': ['A', 'B', 'C']
-})
-
-# Write the DataFrame to the SQL database
+# Write the DataFrame from CSV to the SQL database
+read_csv = pd.read_csv("example") #import data from CSV file 
 read_csv.to_sql('data', engine, index=False, if_exists='replace')
 
 # Read the data back from the SQL database
@@ -42,4 +37,5 @@ sql_df = pd.read_sql('SELECT * FROM data', con=engine)
 
 # Print the result
 print(sql_df)
+
 
