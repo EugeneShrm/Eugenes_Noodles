@@ -34,8 +34,6 @@ read_csv.to_sql('data', engine, index=False, if_exists='replace')
 
 # Read the data back from the SQL database
 sql_df = pd.read_sql('SELECT * FROM data', con=engine)
-
-# Print the result
 print(sql_df)
 
 
