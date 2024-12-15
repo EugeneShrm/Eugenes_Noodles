@@ -10,6 +10,7 @@ print(df[df["Purchase Price"] == df["Purchase Price"].min()]) # Get the row with
 print(df[df["Purchase Price"] == df["Purchase Price"].max()]) # Get the row with the maximum "Purchase Price"
 print(df["Language"] == "en") #How many people have English 'en' as their Language of choice on the website?
 print(sum(df["Job"] == "Lawyer")) #How many people have the job title of "Lawyer" ? 
+print(len(df[df["Job"]== "Lawyer"].index))#v2 How many people have the job title of "Lawyer" ?
 print(df["Job"].value_counts().head(5)) #What are the 5 most common Job Titles?
 print(df['AM or PM'].value_counts()) #How many people made the purchase during the AM and how many people made the purchase during PM ? 
 print(df[df["Lot"] == "90 WT"]["Purchase Price"]) #Someone made a purchase that came from Lot: "90 WT" , what was the Purchase Price for this transaction?
