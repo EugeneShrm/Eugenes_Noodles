@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-x = np.linspace(0, 5, 11)
+x = np.linspace(0, 5, 5)
 y = x ** 2
 
 #Object Oriented Method insdead of plot function 

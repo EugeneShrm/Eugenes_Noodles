@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 x = np.linspace(0, 5, 11)
 y = x ** 2
 
-array = np.ones(5, 5)*10
+array = np.arange(0, 100, 10, dtype=float)
 array2 = array ** 2
 print(array)
 print(array2)
