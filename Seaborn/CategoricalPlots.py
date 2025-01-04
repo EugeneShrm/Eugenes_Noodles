@@ -23,7 +23,7 @@ print(sex_count)"""
 plt.show()
 
 #box plot 
-box_plot= sns.boxplot(x="day", y="total_bill", data=tips, hue = "smoker")
+box_plot= sns.boxplot(x="day", y="total_bill", data=tips, hue = "smoker", palette='rainbow')
 plt.show()
 
 #violing plot

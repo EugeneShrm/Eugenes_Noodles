@@ -24,3 +24,5 @@ plt.show()
 #rug plot
 rug_plot = sns.rugplot(tips["total_bill"])
 plt.show()
+
+
